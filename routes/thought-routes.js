@@ -1,7 +1,6 @@
-// thought routes - ApI
+//API routes for tought
 
 const router = require('express').Router();
-
 const {
     getAllThoughts,
     getOneThought,

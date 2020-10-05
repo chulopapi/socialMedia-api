@@ -1,4 +1,4 @@
-// Index.js routes
+// API Routes
 
 const router = require('express').Router()
 const userRoutes = require('./user-routes')
