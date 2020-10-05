@@ -1,4 +1,4 @@
-//API routes for tought
+//API routes for thought
 
 const router = require('express').Router();
 const {
