@@ -24,7 +24,7 @@ const userController = {
             })
             .select('-__v')
             if (!user) {
-                res.json({message: 'No user found with that id'})
+                res.json({message: 'ID user is not found'})
                 return
             }
             res.json(user)
@@ -53,7 +53,7 @@ const userController = {
             )
             .select('-__v')
             if (!user) {
-                res.json({message: 'No user found with that id'})
+                res.json({message: 'ID user is not found'})
                 return
             }
             res.json(user)
@@ -67,7 +67,7 @@ const userController = {
             const user = await User.findOneAndDelete({_id:id})
             .select('-__v')
             if (!user) {
-                res.json({message: 'No user found with that id'})
+                res.json({message: 'ID user is not found'})
                 return
             }
             if (user.thoughts.length > 0) {
@@ -89,7 +89,7 @@ const userController = {
             )
             .select('-__v')
             if (!user) {
-                res.json({message: 'No user found with that id'})
+                res.json({message: 'ID user is not found'})
                 return
             }
             res.json(user)
@@ -108,7 +108,7 @@ const userController = {
             )
             .select('-__v')
             if (!user) {
-                res.json({message: 'No user found with that id'})
+                res.json({message: 'ID user is not found'})
                 return
             }
             res.json(user)

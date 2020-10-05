@@ -20,4 +20,4 @@ router
 .put('/:id/reactions', addReaction)
 .delete('/:thoughtId/reactions/:reactionId', deleteReaction)
 
-module.exports = router
+module.exports = router  
