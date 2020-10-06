@@ -22,7 +22,7 @@ const thoughtController = {
             })
             .select('-__v')
             if (!thought) {
-                res.json({message: 'No thought found with that id'})
+                res.json({message: 'thought ID is not found'})
                 return
             }
             res.json(thought)
@@ -57,7 +57,7 @@ const thoughtController = {
             )
             .select("-__v")
             if (!thought) {
-                res.json({message: 'No thought found with that id'})
+                res.json({message: 'thought ID is not found'})
                 return
             }
             res.json(thought)
@@ -71,7 +71,7 @@ const thoughtController = {
             const thought = await Thought.findOneAndDelete({_id:id})
             .select("-__v")
             if (!thought) {
-                res.json({message: 'No thought found with that id'})
+                res.json({message: 'thought ID is not found'})
                 return
             }
             res.json(thought)
@@ -89,7 +89,7 @@ const thoughtController = {
             )
             .select("-__v")
             if (!thought) {
-                res.json({message: 'No thought found with that id'})
+                res.json({message: 'thought ID is not found'})
                 return
             }
             res.json(thought)
@@ -107,7 +107,7 @@ const thoughtController = {
             )
             .select("-__v")
             if (!thought) {
-                res.json({message: 'No thought found with that id'})
+                res.json({message: 'thought ID is not found'})
                 return
             }
             res.json(thought)
