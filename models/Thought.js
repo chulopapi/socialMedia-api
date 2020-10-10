@@ -1,3 +1,5 @@
+//MODEL Thoughts.js
+
 const moment = require('moment');
 const { Schema, model, Types } = require('mongoose');
 
